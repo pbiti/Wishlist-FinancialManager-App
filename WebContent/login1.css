@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Raleway;
+}
+
+h2, h3{
+  font-family: Raleway;
+  color: LightYellow;
+}
+
+p,i{
+	display: inline;
+}
+
+.navbar img {
+	width: 25px;
+	height: 25px;
+}
+
+h2{
+	display: inline;
+}
+form{
+	display: inline;
+}
+form, .icons{
+	display:inline;
+}
+.profilebtn{
+	display:inline-block;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Raleway;
+}
+
+.navbar a.active {
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: LightYellow;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.header-right {
+  float: right;
+}
+
+.dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: LightYellow;
+  padding: 14px 10px;
+  background-color: #333;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover {
+  background-color: black;
+}
+
+.dropbtn:hover {
+   background-color: black;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 2%;
+  background-color: transparent;
+  opacity: 1;
+  height: 400px;
+  text-align: center;
+  color: black;
+}
+
+input{
+  border: 2px outset #2b7a78;
+  border-radius: 5px;
+  background-color: LightYellow;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.reviews {
+  box-shadow: 10px 10px 5px #333;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 50%;
+  background: linear-gradient(to left top, #333 10%, black 80%);
+  text-align: left;
+  font-family: Raleway;
+}
+.reviews::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.reviews img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.reviews p{
+  float: left;
+  
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.reviews img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+hr.new1 {
+  border-top: 1px solid black;
+  border-bottom: 3px solid black;
+}
+

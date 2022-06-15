@@ -1,0 +1,15 @@
+.product_info{
+	margin-top : 50px;
+}
+
+.product_info .right-info{
+}
+
+.product_info .left-info {
+	float: left;
+	padding-left: 50px;	
+}
+
+.main {
+	padding-top: 300px;
+}
