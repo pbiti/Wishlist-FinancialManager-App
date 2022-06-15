@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+			http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+		id="WebApp_ID" version="3.1">
+
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/Error.jsp</location>
+	</error-page>
+	
+	<welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+		
+	<servlet>
+        <servlet-name>user_login</servlet-name>
+        <servlet-class>servlet.user_login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user_login</servlet-name>
+        <url-pattern>/user_login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>user_signup</servlet-name>
+        <servlet-class>servlet.user_signup</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user_signup</servlet-name>
+        <url-pattern>/user_signup</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+	<servlet-name>user_rating</servlet-name>
+	<servlet-class>servlet.RatingController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>user_rating</servlet-name>
+	<url-pattern>/rate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>prod_rating</servlet-name>
+	<servlet-class>servlet.rate_product</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>prod_rating</servlet-name>
+	<url-pattern>/rate_product</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>products_servlet</servlet-name>
+	<servlet-class>servlet.products_servlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>products_servlet</servlet-name>
+	<url-pattern>/products_servlet</url-pattern>
+	</servlet-mapping>
+	
+    <servlet>
+        <servlet-name>search_products</servlet-name>
+        <servlet-class>servlet.search_products</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>search_products</servlet-name>
+        <url-pattern>/search_products</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+	<servlet-name>user_logout</servlet-name>
+	<servlet-class>servlet.user_logout</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>user_logout</servlet-name>
+	<url-pattern>/user_logout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+        <servlet-name>upload_image</servlet-name>
+        <servlet-class>servlet.upload_image</servlet-class>
+        <multipart-config>
+            <max-file-size>10485760</max-file-size>
+            <max-request-size>20971520</max-request-size>
+            <file-size-threshold>5242880</file-size-threshold>
+    	</multipart-config>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>upload_image</servlet-name>
+        <url-pattern>/upload_image</url-pattern>
+    </servlet-mapping>	
+    
+    <servlet>
+        <servlet-name>wishlist</servlet-name>
+        <servlet-class>servlet.wishlist</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>wishlist</servlet-name>
+        <url-pattern>/wishlist</url-pattern>
+    </servlet-mapping>	
+    
+    <servlet>
+        <servlet-name>my_pocket</servlet-name>
+        <servlet-class>servlet.mypocket</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>my_pocket</servlet-name>
+        <url-pattern>/my_pocket</url-pattern>
+    </servlet-mapping>	
+
+</web-app>
